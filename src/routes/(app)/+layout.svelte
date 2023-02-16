@@ -6,7 +6,6 @@
     import { Toaster } from 'svelte-french-toast';
 
     export let data;
-    $: console.log(data)
     $: if(!data?.isLogged) browser && goto(`/login`);    
 </script>
 
